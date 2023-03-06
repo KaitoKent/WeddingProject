@@ -17,7 +17,7 @@
 
 <body>
     <!-- main slide -->
-    <div class="slider">
+    <section class="slider">
         <!-- slides -->
         <div class="slider">
             <div class="slider--content">
@@ -43,7 +43,7 @@
             <div class="slider__control-line"></div>
             <div class="slider__control-line"></div>
         </div>
-    </div>
+    </section>
     <!-- end main slide -->
 
     <!-- header -->
@@ -144,7 +144,52 @@
     </section>
     <!-- end couple-img -->
 
-    <div class="couple__love"></div>
+    <!-- couple date -->
+    <section class="couple__love">
+        <div class="container">
+            <div class="row group__button_payment">
+                <div class="col col-lg-12">
+                    <div class="text-center btn-container">
+                        <a href="#" class="btn btn-danger group__button_payment-btn btn-lg theme-btn">
+                            <span>
+                                <i class="fa fa-regular fa-comment i-icon"></i>
+                                Gửi lời chúc
+                            </span>
+                        </a>
+                        <a href="#" class="btn btn-danger group__button_payment-btn btn-lg theme-btn">
+                            <span>
+                                <i class="fa fa-regular fa-paper-plane i-icon"></i>
+                                Xác nhận tham dự
+                            </span>
+                        </a>
+                        <a href="#" class="btn btn-danger group__button_payment-btn btn-lg theme-btn">
+                            <span>
+                                <i class="fa fa-solid fa-coins i-icon"></i>
+                                Mừng cưới
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="couple__date">
+        <div class="contaiter couple__date--content">
+            <div class="couple__date--feature">
+                <h1 class="couple__date--title">Save The Date</h1>
+                <p class="couple__date--text">22 December 2022</p>
+            </div>
+        </div>
+        <div class="clock-grids">
+            <div id="clock">
+                <div class="box"><span id="day" class="text-theme">1</span><p>Ngày</p></div>
+                <div class="box"><span id="hour" class="text-theme">2</span><p>Giờ</p></div>
+                <div class="box"><span id="minute" class="text-theme">3</span><p>Phút</p></div>
+                <div class="box"><span id="second" class="text-theme">3</span><p>Giây</p></div>
+            </div>
+        </div>
+    </section>
+    <!-- end couple date -->
 
     <!-- Love-img -->
     <section>
@@ -174,6 +219,12 @@
         </div>
     </section>
     <!-- end love -->
+
+    <!-- button audio -->
+    <div class="btn__play-audio">
+        <i id="play-pause-btn" onclick="playMusic()" class="fa fa-solid fa-volume-xmark i-icon"></i>
+    </div>
+    <!-- endbutton audio -->
 
 
 

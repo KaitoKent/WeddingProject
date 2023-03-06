@@ -1,3 +1,4 @@
+// function slide
 const slideContainer = document.querySelector('.slider');
 const sliderText = document.querySelector('.slider--text');
 const btnLeft = document.querySelector('.slider__btn-left');
@@ -29,7 +30,7 @@ const startSlider = () => {
   sliderText.innerHTML = sliderImages[0].text;
 };
 
-btnRight.addEventListener('click', function() {
+btnRight.addEventListener('click', function () {
   if (slideCounter === sliderImages.length - 1) {
     slideContainer.style.backgroundImage = `linear-gradient(
       to right,
@@ -57,7 +58,7 @@ btnRight.addEventListener('click', function() {
   }, 1000);
 });
 
-btnLeft.addEventListener('click', function() {
+btnLeft.addEventListener('click', function () {
   if (slideCounter === 0) {
     slideContainer.style.backgroundImage = `linear-gradient(
       to right,
@@ -85,3 +86,60 @@ btnLeft.addEventListener('click', function() {
   }, 1000);
 });
 document.addEventListener('DOMContentLoaded', startSlider);
+// end slide
+
+
+// function couting datetime
+var startDateTime = new Date(2022, 11, 21, 23, 59, 59, 0); // YYYY (M-1) D H m s ms (start time and date from DB)
+var startStamp = startDateTime.getTime();
+
+var newDate = new Date();
+var newStamp = newDate.getTime();
+
+var timer; // for storing the interval (to stop or pause later if needed)
+
+function updateClock() {
+  newDate = new Date();
+  newStamp = newDate.getTime();
+  var diff = Math.round((newStamp - startStamp) / 1000);
+
+  var d = Math.floor(diff / (24 * 60 * 60)); /* though I hope she won't be working for consecutive days :) */
+  diff = diff - (d * 24 * 60 * 60);
+  var h = Math.floor(diff / (60 * 60));
+  diff = diff - (h * 60 * 60);
+  var m = Math.floor(diff / (60));
+  diff = diff - (m * 60);
+  var s = diff;
+
+  document.getElementById("day").innerHTML = d;
+  document.getElementById("hour").innerHTML = h;
+  document.getElementById("minute").innerHTML = m;
+  document.getElementById("second").innerHTML = s;
+}
+
+timer = setInterval(updateClock, 1000);
+
+
+// play audio
+
+function playMusic() {
+  var audio = new Audio('./image/audio/EdSheeran-Perfect.mp3');
+
+  document.getElementById("#play-pause-btn")("click", function () {
+    if (document.hasClass('fa-volume-xmark')) {
+      document.removeClass('fa-volume-xmark');
+      document.addClass('fa-volume-high');
+      audio.play();
+    }
+    else {
+      document.removeClass('fa-volume-high');
+      document.addClass('fa-volume-xmark');
+      audio.pause();
+    }
+  });
+
+  audio.onended = function () {
+    $("#play-pause-btn").removeClass('fa-volume-high');
+    $("#play-pause-btn").addClass('fa-volume-xmark');
+  };
+}

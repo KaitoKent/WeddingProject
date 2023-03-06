@@ -6,6 +6,9 @@
 	margin: 0;
 	padding: 0;
 }
+a{
+	text-decoration: none;
+}
 
 body {
 	font-family: 'Dosis'sans-serif;
@@ -89,6 +92,132 @@ body {
 .slider__btn-right:hover {
 	transform: scale(0.95);
 }
+.couple__love{
+	background: #ffe2e5;
+    padding: 0;
+}
+.text-center{
+	text-align: center;
+}
+.group__button_payment .btn-container{
+	margin-top: 20px;
+    margin-bottom: 30px;
+}
+.group__button_payment .btn-container .group__button_payment-btn{
+	padding: 15px 20px!important;
+    min-width: 220px!important;
+    margin: 10px 5px 0!important;
+    font-size: .85rem!important;
+    text-transform: uppercase;
+}
+.theme-btn{
+	background-color: #f23b43;
+    color: #fff;
+    font-weight: bold;
+    padding: 12px 30px;
+    border: 0;
+    outline: 0;
+    display: inline-block;
+    border-radius: 50px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    transition: all 0.3s;
+    text-transform: uppercase;
+}
+.couple__date{
+	width: 100%;
+	height: 600px;
+	background-image: url(../image/wallpaperbetter.com_1920x1080.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	margin-bottom: 8rem;
+}
+.couple__date--content{
+	display: flex;
+	align-items: center;
+	width: 100%;
+	height: 50%;
+}
+.couple__date .couple__date--feature{
+	text-align: center;
+	width: 100%;
+	height: 0%;
+}
+.couple__date .couple__date--feature .couple__date--title{
+	font-size: 3.5rem;
+	color: #fff;
+	font-family: 'Great Vibes', cursive;
+	font-weight: 500;
+	text-shadow: #000 5px 5px 5px;
+}
+.couple__date .couple__date--feature .couple__date--text{
+	font-size: 2rem;
+	color: #fff;
+	font-family: 'Great Vibes', cursive;
+	font-weight: 500;
+	text-shadow: #000 5px 5px 5px;
+}
+.couple__date .couple__date--feature .couple__date--text::before{
+	content: "";
+	border-top: 1px solid #fff;
+	display: inline-block;
+	margin: 5px 15px;
+	width: 40px;
+	height: 1px;
+
+}
+.couple__date .couple__date--feature .couple__date--text::after{
+	content: "";
+	border-top: 1px solid #fff;
+	display: inline-block;
+	margin: 5px 15px;
+	width: 40px;
+	height: 1px;
+}
+
+.clock-grids{
+	color: #f14148;
+}
+.clock-grids #clock{
+	overflow: hidden;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+.clock-grids #clock .box{
+	width: 176px;
+	height: 176px;
+	float: left;
+	display: table;
+	border: 3px solid #f23b43;
+	border-radius: 50%;
+	color: #000;
+	background-color: rgb(255,255,255, 60%);
+}
+.clock-grids #clock .box .text-theme{
+	font-size: 80px;
+	color: #f23b43;
+	font-family: 'Great Vibes', cursive;
+	font-weight: 500;
+}
+
+.btn__play-audio{
+	position: -webkit-sticky;
+    position: sticky;
+	bottom: 5%;
+	margin-left: 1%;
+}
+.btn__play-audio i{
+	background-color: #f23b43;
+    padding: 20px;
+    border-radius: 50%;
+	cursor: pointer;
+}
 
 @media (max-width: 767px) {
 	.slider--feature {
@@ -114,6 +243,9 @@ body {
 	}
 	.slider--text{
 		font-size: 1rem;
+	}
+	.couple__date{
+		height: 850px;
 	}
 }
 
