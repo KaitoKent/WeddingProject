@@ -1,5 +1,5 @@
 /* css header */
-.section1{
+.section1 {
     background-color: #fff;
     box-shadow: 0px 0px 35.77px 13.23px rgba(5, 5, 161, 0.16);
 }
@@ -19,9 +19,8 @@
     font-weight: bold;
 
 }
-
 .nav-menu ul li {
-    margin-right: 20px;
+    margin-right: 10px;
 }
 
 .nav-menu ul .nav-item .nav-link:hover {
@@ -38,7 +37,8 @@
 .couple-img img {
     max-width: 100%;
 }
-.couple-img p{
+
+.couple-img p {
     color: #818492;
     line-height: 1.8em;
 }
@@ -50,27 +50,31 @@
     margin: 20px 0;
     text-align: center;
 }
+
 /* icon */
 
-.icon-nav ul{
+.icon-nav ul {
     display: flex;
     justify-content: center;
 }
-.icon-nav ul li{
+
+.icon-nav ul li {
     margin: 10px;
-    list-style: none;  
+    list-style: none;
 }
-.icon-nav ul li .i-icon{
+
+.icon-nav ul li .i-icon {
     font-size: 30px;
     color: #f23b43;
 }
-.icon-nav ul li .i-icon:hover{
+
+.icon-nav ul li .i-icon:hover {
     color: #b9060f;
 }
 
 /* end couple-img */
 /* css love */
-.nav-h2-love h2{
+.nav-h2-love h2 {
     font-family: "Great Vibes", cursive;
     font-size: 3rem;
     color: #2f2f2f;
@@ -78,23 +82,29 @@
     text-transform: capitalize;
 
 }
-.love-1 h3{
+
+.love-1 h3 {
     font-family: "Great Vibes", cursive;
     font-size: 2.000rem;
     margin: 0 0 0.4em;
     color: #f23b43;
 }
-.love-1 h4{
+
+.love-1 h4 {
     color: #2f2f2f;
 }
-.love-img-1 img{
+
+.love-img-1 img {
     max-width: 100%;
+    border-radius: 3px;
 }
-.love-1 p{
+
+.love-1 p {
     color: #818492;
     line-height: 1.8em;
 }
-.nav-love{
+
+.nav-love {
     background-color: #fff;
     max-width: 770px;
     margin: 0 auto;
@@ -103,7 +113,33 @@
     border-radius: 10px;
     position: relative;
 }
-.nav-love {
-    
+
+.love-1 samp i {
+    font-size: 30px;
+    color: #f23b43;
 }
+
 /* end css love */
+/* css ablum */
+.zoom-In img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    display: block;
+    cursor: pointer;
+}
+
+.zoom-In figure img {
+    transform: scale(1);
+    transition: 0.3s ease-in-out;
+}
+
+.zoom-In figure:hover img {
+    transform: scale(1.2);
+}
+
+.zoom-In figure {
+    overflow: hidden;
+}
+
+/* end ablum */
