@@ -173,3 +173,141 @@
     line-height: 1.3em;
 }
 /* end css avatar */
+
+
+/* css love */
+.section-love{
+    background: url(../image/bglove.png) center center/cover no-repeat local;
+    text-align: center;
+}
+
+.nav-love{
+    background-color: #fff;
+    max-width: 970px;
+    margin: 0 auto;
+    padding: 65px;
+    box-shadow: 0px 14px 36.21px 14.79px rgb(177 154 86 / 9%);
+    border-radius: 10px;
+    position: relative;
+    padding-bottom: 95px;
+    margin-bottom: 60px;
+}
+.nav-love h3{
+    font-family: "Great Vibes", cursive;
+    font-size: 33px;
+    font-size: 2.4625rem;
+    margin: 0 0 0.4em;
+    color: #f23b43;
+}
+.nav-love h4{
+    color: #2f2f2f;
+}
+.nav-h2-love h2{
+    font-family: "Great Vibes", cursive;
+    font-size: 48px;
+    font-size: 3rem;
+    color: #2f2f2f;
+    margin: 0;
+    text-transform: capitalize;
+    position: relative;
+    margin-top: 40px;
+}
+.love-img-1 img{
+    width: 66%;
+    margin: 0 auto;
+}
+.nav-love p{
+    color: #818492;
+    line-height: 1.8em;
+    margin-top: 20px;
+}
+.love-1 samp i{
+    color: #f23b43; 
+    font-size: 25px;
+}
+.hoa-befor{
+    position: relative;
+}
+.befo:after{
+    content: "";
+    background: url(../image/888.png) center center/cover no-repeat local;
+    width: 394px;
+    height: 311px;
+    position: absolute;
+    left: -359px;
+    top: 20%;
+    z-index: -10;
+}
+/* .hoa-befor-1{
+    position: relative;
+}
+.befo-1:after{
+    content: "";
+    background: url(../image/888.png) center center/cover no-repeat local;
+    width: 394px;
+    height: 311px;
+    position: absolute;
+    left: 660px;
+    top: 20%;
+    z-index: -10;
+} */
+.hoa-befor-2{
+    position: relative;
+}
+.befo-2:after{
+    content: "";
+    background: url(../image/888.png) center center/cover no-repeat local;
+    width: 394px;
+    height: 311px;
+    position: absolute;
+    left: -359px;
+    top: 20%;
+    z-index: -10;
+}
+/* end css love */
+
+/* footer */
+.footer-style-1{
+    background: url(../image/bgft.png) center bottom/100% no-repeat local;
+    text-align: center;
+    height: 100vh;
+    max-width: 100%;
+    min-height: 900px;
+    position: relative;
+}
+.footer-style-1 .inner{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+   
+}
+.footer-style-1 .couple-pic{
+    background: url(../image/bgftavta.png) center center/cover no-repeat local;
+    width: 511px;
+    height: 470px;
+    top: -276px;
+    margin: 0 auto;
+    position: relative;
+}
+.footer-style-1 .couple-pic img{
+    max-width: 75%;
+    border-radius: 50%;
+    position: absolute;
+    left: 11%;
+    top: 4%;
+   
+}
+.couple-pic{
+    width: 100%;
+}
+.inner h2{
+    font-family: "dancing_scriptregular", cursive;
+    font-size: 72px;
+    font-size: 4.8rem;
+    line-height: 1.8em;
+    margin: 0.8em 0;
+    position: absolute;
+    margin-left: 66px;
+    margin-top: 462px;
+}
+/* end ft */
