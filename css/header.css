@@ -28,98 +28,8 @@
 }
 
 /* end css header   */
-/* css couple-img */
-.section2 {
-    padding: 120px 0;
-    background: #fefefe99;
-}
 
-.couple-img img {
-    max-width: 100%;
-}
 
-.couple-img p {
-    color: #818492;
-    line-height: 1.8em;
-}
-
-.couple-img h2 {
-    font-family: "Great Vibes", cursive;
-    font-size: 35px;
-    color: #f23b43;
-    margin: 20px 0;
-    text-align: center;
-}
-
-/* icon */
-
-.icon-nav ul {
-    display: flex;
-    justify-content: center;
-}
-
-.icon-nav ul li {
-    margin: 10px;
-    list-style: none;
-}
-
-.icon-nav ul li .i-icon {
-    font-size: 30px;
-    color: #f23b43;
-}
-
-.icon-nav ul li .i-icon:hover {
-    color: #b9060f;
-}
-
-/* end couple-img */
-/* css love */
-.nav-h2-love h2 {
-    font-family: "Great Vibes", cursive;
-    font-size: 3rem;
-    color: #2f2f2f;
-    margin: 0;
-    text-transform: capitalize;
-
-}
-
-.love-1 h3 {
-    font-family: "Great Vibes", cursive;
-    font-size: 2.000rem;
-    margin: 0 0 0.4em;
-    color: #f23b43;
-}
-
-.love-1 h4 {
-    color: #2f2f2f;
-}
-
-.love-img-1 img {
-    max-width: 100%;
-    border-radius: 3px;
-}
-
-.love-1 p {
-    color: #818492;
-    line-height: 1.8em;
-}
-
-.nav-love {
-    background-color: #fff;
-    max-width: 770px;
-    margin: 0 auto;
-    padding: 65px;
-    box-shadow: 0px 14px 36.21px 14.79px rgb(177 154 86 / 9%);
-    border-radius: 10px;
-    position: relative;
-}
-
-.love-1 samp i {
-    font-size: 30px;
-    color: #f23b43;
-}
-
-/* end css love */
 /* css ablum */
 .zoom-In img {
     max-width: 100%;
@@ -128,14 +38,50 @@
     display: block;
     cursor: pointer;
 }
+.ablum-top{
+    text-align: center;
+    margin-top: 60px;
+}
+.a-btn i{
+    content: "\f101";
+    font-size: 16px;
+    font-size: 1.06667rem;
+    color: #fff;
+    position: absolute;
+    right: 20px;
+    top: 31%;
+    
+}
 
+.ablum-top .a-btn{
+    margin-top: 10px;
+    background-color: #c89d9c;
+    color: #fff;
+    padding: 10px 50px 15px 25px;
+    font-weight: 700;
+    border: 0;
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+}
+.ablum-top h2{
+    font-family: "dancing_scriptregular", cursive;
+    font-size: 36px;
+    font-weight: 600;
+    margin: 0 0 0.39em;
+}
+.ablum-top p{
+    font-size: 1.13333rem;
+    font-weight: 300;
+    margin-bottom: 0;
+}
 .zoom-In figure img {
     transform: scale(1);
     transition: 0.3s ease-in-out;
 }
 
 .zoom-In figure:hover img {
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 .zoom-In figure {
@@ -143,3 +89,87 @@
 }
 
 /* end ablum */
+/* timeline */
+
+/* css avatar */ 
+.container-ava{
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.before-at{
+    position: relative;
+    text-align: center;
+    margin-left: -65px;
+    margin-top: 50px;
+}
+.before-top:before {
+    content: "";
+    background:url(../image/img-ava.png) center center/cover no-repeat local;
+    width: 126px;
+    height: 59px;
+    position: absolute;
+    top: 0;
+   margin-right:-50px ;
+    
+}
+
+.section-title{
+    text-align: center;
+    
+    margin-top: 60px;
+}
+.section-title h2{
+    font-family: "dancing_scriptregular", cursive;
+    font-size: 36px;
+    font-weight: 600;
+    margin: 0 0 0.39em;
+}
+.section-title p{
+    font-size: 1.13333rem;
+    font-weight: 300;
+    margin-bottom: 0;
+}
+.avatar-bg{
+    background: #F2EDED!important;
+}
+.avatar {
+    display: flex;
+    align-items: center;
+    width: 570px;
+   margin-bottom: 80px;
+}
+.avatar-img img{
+    width: 200px;
+    border-radius: 50%;
+    width: 100%;
+}
+.avatar-p{
+    margin-left: 20px;
+  
+}
+.avatar-icon{
+    display: flex;
+    padding-left: 0;
+}
+
+.avatar-icon li{
+    list-style: none;
+    margin-right: 9px;
+}
+.avatar-icon li a{
+    font-size: 1.2rem;
+    color: #c89d9c;
+}
+
+.avatar-p h2{
+    font-family: "dancing_scriptregular", cursive;
+    font-size: 2rem;
+}
+.avatar-p h4{
+    color: #c89d9c;
+}
+.avatar-p p{
+    color: #444;
+    line-height: 1.3em;
+}
+/* end css avatar */
