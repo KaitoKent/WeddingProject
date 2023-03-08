@@ -1,91 +1,5 @@
 // function slide
-const slideContainer = document.querySelector('.slider');
-const sliderText = document.querySelector('.slider--text');
-const btnLeft = document.querySelector('.slider__btn-left');
-const btnRight = document.querySelector('.slider__btn-right');
 
-const sliderImages = [
-  {
-    src: './image/1111055.png',
-    text: '22 December 2022'
-  },
-  {
-    src: './image/1111057.png',
-    text: '22 December 2022'
-  },
-  {
-    src: './image/1111059.png',
-    text: '22 December 2022'
-  }
-];
-
-let slideCounter = 0;
-
-const startSlider = () => {
-  slideContainer.style.backgroundImage = `linear-gradient(
-      to right,
-      rgba(34, 34, 34, 0.4),
-      rgba(68, 68, 68, 0.4)
-    ), url(${sliderImages[0].src})`;
-  sliderText.innerHTML = sliderImages[0].text;
-};
-
-btnRight.addEventListener('click', function () {
-  if (slideCounter === sliderImages.length - 1) {
-    slideContainer.style.backgroundImage = `linear-gradient(
-      to right,
-      rgba(34, 34, 34, 0.4),
-      rgba(68, 68, 68, 0.4)
-    ), url(${sliderImages[0].src})`;
-    sliderText.innerHTML = sliderImages[0].text;
-    slideCounter = -1;
-
-    slideContainer.classList.add('fadeIn');
-    setTimeout(() => {
-      slideContainer.classList.remove('fadeIn');
-    }, 1000);
-  }
-  slideContainer.style.backgroundImage = `linear-gradient(
-      to right,
-      rgba(34, 34, 34, 0.4),
-      rgba(68, 68, 68, 0.4)
-      ),url(${sliderImages[slideCounter + 1].src})`;
-  sliderText.innerHTML = sliderImages[slideCounter + 1].text;
-  slideCounter++;
-  slideContainer.classList.add('fadeIn');
-  setTimeout(() => {
-    slideContainer.classList.remove('fadeIn');
-  }, 1000);
-});
-
-btnLeft.addEventListener('click', function () {
-  if (slideCounter === 0) {
-    slideContainer.style.backgroundImage = `linear-gradient(
-      to right,
-      rgba(34, 34, 34, 0.4),
-      rgba(68, 68, 68, 0.4)
-    ),url(${sliderImages[sliderImages.length - 1].src})`;
-    sliderText.innerHTML = sliderImages[sliderImages.length - 1].text;
-    slideCounter = sliderImages.length;
-    slideContainer.classList.add('fadeIn');
-    setTimeout(() => {
-      slideContainer.classList.remove('fadeIn');
-    }, 1000);
-  }
-
-  slideContainer.style.backgroundImage = `linear-gradient(
-      to right,
-      rgba(34, 34, 34, 0.4),
-      rgba(68, 68, 68, 0.4)
-    ),url(${sliderImages[slideCounter - 1].src})`;
-  sliderText.innerHTML = sliderImages[slideCounter - 1].text;
-  slideCounter--;
-  slideContainer.classList.add('fadeIn');
-  setTimeout(() => {
-    slideContainer.classList.remove('fadeIn');
-  }, 1000);
-});
-document.addEventListener('DOMContentLoaded', startSlider);
 // end slide
 
 
@@ -118,6 +32,30 @@ function updateClock() {
 }
 
 timer = setInterval(updateClock, 1000);
+
+
+// play video couple
+$(document).ready(function () {
+  // Gets the video src from the data-src on each button
+  var $videoSrc;
+  $('.video-btn').click(function () {
+    $videoSrc = $(this).data("src");
+  });
+  console.log($videoSrc);
+  // when the modal is opened autoplay it  
+  $('#myModal').on('shown.bs.modal', function (e) {
+
+    // set the video src to autoplay and not to show related video. Youtube related video is like a box of chocolates... you never know what you're gonna get
+    $("#video").attr('src', $videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0");
+  })
+  // stop playing the youtube video when I close the modal
+  $('#myModal').on('hide.bs.modal', function (e) {
+    // a poor man's stop video
+    $("#video").attr('src', $videoSrc);
+  })
+  // document ready  
+});
+// end play video couple
 
 
 // play audio
