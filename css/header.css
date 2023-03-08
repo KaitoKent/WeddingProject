@@ -310,4 +310,112 @@
     margin-left: 66px;
     margin-top: 462px;
 }
+@media (max-width: 767px) {
+	.footer-style-1 .couple-pic img {
+        max-width: 72%;
+      
+        background-size: cover; 
+	}
+    .footer-style-1 .couple-pic{
+        width: 300px;
+        height: 276px;
+	}
+    .inner h2{
+        font-size: 40px;
+        left: -23px;
+        bottom: -112px;
+    }
+    .avatar-p h2{
+        font-size: 20px;
+    }
+    .avatar-p h4{
+        font-size: 15px;
+    }
+    .avatar-p p{
+        font-size: 13px;
+    }
+    .love-1 h3{
+        font-size: 30px;
+    }
+    .love-1 h4{
+        font-size: 20px;
+    }
+    .love-1 p{
+        font-size: 13px;
+    }
+
+	.slider--title {
+		font-size: 2rem;
+	}
+    .section-title h2{
+        font-size: 30px;
+    }
+    .section-title p{
+        font-size: 15px;
+    }
+    .nav-h2-love h2{
+        font-size: 30px;
+    }
+    .ablum-top h2{
+        font-size: 30px;
+    }
+    .ablum-top p{
+        font-size: 15px;
+    }
+
+	.slider__btn-right,
+	.slider__btn-left {
+		z-index: 300;
+	}
+
+	.slider-pagi__elem:hover:before {
+		transform: translate(-50%, -50%) scale(1);
+		width: 1.1rem;
+		height: 1.1rem;
+	}
+
+	.slider--text {
+		font-size: 1rem;
+	}
+
+	.slider--text::before {
+		margin: 5px 15px;
+
+	}
+
+	.slider--text::after {
+		margin: 5px 15px;
+	}
+
+	.couple__date {
+		height: 100vh;
+	}
+
+	.site__logo--title {
+		font-size: 1.5rem;
+	}
+
+	.inner--title {
+		font-size: 2.1rem;
+	}
+
+	.inner--subtitle {
+		font-size: 12px;
+	}
+
+	.inner--textName {
+		font-size: 1.1rem;
+	}
+
+	.inner--text {
+		font-size: 15px;
+	}
+
+	.calendar_weekdays .weeks span {
+		padding: 5px;
+	}
+	.inviditation-box .right-vec{
+		display: none;
+	}
+}
 /* end ft */
