@@ -8,6 +8,18 @@
 	padding: 0;
 }
 
+body::-webkit-scrollbar {
+	width: 5px;
+}
+
+body::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+	background-color: #C89D9C;
+}
+
 a {
 	text-decoration: none;
 	color: #000;
@@ -22,7 +34,7 @@ ul li {
 }
 
 body {
-	font-family: 'Dosis'sans-serif;
+	font-family: 'Comfortaa', sans-serif;
 }
 
 .top-bar {
@@ -344,7 +356,7 @@ body {
 .couple__date {
 	width: 100%;
 	height: 600px;
-	background-image: url(../image/CHECKMAU/DSC03975_22.jpg);
+	background-image: url(../image/CHECKMAU/DSC03244_22.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -447,14 +459,16 @@ body {
 	margin: 30px auto;
 	position: relative;
 }
-.modal{
+
+.modal {
 	height: 100vh;
 }
-.modal-content{
-	border-left: 10px solid rgba(255,255,255,.2);
-	border-right: 10px solid rgba(255,255,255,.2);
-	border-bottom: 10px solid rgba(255,255,255,.2);
-	background-color: rgba(255,255,255,.2);
+
+.modal-content {
+	border-left: 10px solid rgba(255, 255, 255, .2);
+	border-right: 10px solid rgba(255, 255, 255, .2);
+	border-bottom: 10px solid rgba(255, 255, 255, .2);
+	background-color: rgba(255, 255, 255, .2);
 }
 
 .modal-body {
@@ -467,6 +481,144 @@ body {
 	top: 0;
 }
 
+
+
+
+.even__wedding {
+	background: #F2EDED;
+	padding: 0;
+	position: relative;
+	padding-bottom: 90px;
+}
+
+.even__wedding--content {
+	background-image: url(../image/CHECKMAU/DSC03975_22.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	text-align: center;
+	width: 100%;
+	height: 60%;
+	padding: 120px 0px 250px;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+
+.even__wedding .even__wedding--feature {
+	text-align: center;
+	width: 100%;
+	height: 0%;
+}
+
+.even__wedding .even__wedding--feature .even__wedding--title {
+	font-size: 4rem;
+	color: #fff;
+	font-family: 'Great Vibes', cursive;
+	font-weight: 500;
+	text-shadow: 3px 1px 2px #000, 0 0 1em #000, 0 0 0.2em #000;
+}
+
+.even__wedding .even__wedding--feature .even__wedding--text {
+	font-size: 1rem;
+	color: #fff;
+	font-family: 'Comfortaa', sans-serif;
+	font-weight: 500;
+	text-shadow: 3px 1px 2px #000, 0 0 1em #000, 0 0 0.2em #000;
+}
+
+.even__wedding--card_group {
+	margin: 355px 0px 0px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	position: relative;
+}
+
+.even__wedding--card {
+	float: left;
+	padding: 20px;
+	margin: 0px 10px 30px;
+	text-align: center;
+	background: url(../image/bg.png);
+	box-shadow: rgb(178 201 211 / 18%) 0px 4px 13.65px 7.35px;
+}
+
+.even__wedding--card h3 {
+	font-size: 1.1rem;
+	position: relative;
+	margin: 0px 0px 1.4em;
+	padding: 0px 0px 0.8em;
+}
+
+.even__wedding--card h3::before {
+	content: "";
+	background: rgb(200, 157, 156);
+	width: 120px;
+	height: 2px;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: 0px;
+}
+
+.even__wedding--card .image-wrap {
+	margin-bottom: 20px;
+}
+
+.even__wedding--card .image-wrap img {
+	width: 100%;
+}
+
+.even__wedding--card .card--date {
+	color: #797979;
+	font-family: 'Comfortaa', sans-serif;
+}
+
+.even__wedding--card .card--text {
+	font-family: 'Comfortaa', sans-serif;
+	font-size: 13px;
+}
+
+.even__wedding--card .see-location-btn {
+	font-family: 'Comfortaa', sans-serif;
+	font-size: 15px;
+	font-weight: bold;
+	padding: 10px 21px 8px;
+	border: 2px solid rgb(200, 157, 156);
+	color: rgb(129, 132, 146);
+	border-radius: 60px;
+	display: block;
+}
+
+.even__wedding--card .see-location-btn:hover {
+	background: rgb(200, 157, 156);
+	color: rgb(255, 255, 255);
+	transition: .3s ease;
+}
+
+.atcb-initialized {
+	display: block;
+}
+
+.calendar-button-btn {
+	font-family: 'Comfortaa', sans-serif;
+	width: 100%;
+	font-size: 15px;
+	font-weight: bold;
+	padding: 10px 21px 8px;
+	border: 2px solid #797979;
+	color: rgb(0, 0, 0);
+	border-radius: 60px;
+	margin-bottom: 10px;
+	display: block;
+}
+
+.calendar-button-btn:hover {
+	background: #fff;
+}
+
+/* mobile */
 @media (max-width: 767px) {
 	.slider--feature {
 		position: absolute;
@@ -529,21 +681,152 @@ body {
 	.calendar_weekdays .weeks span {
 		padding: 5px;
 	}
-	.inviditation-box .right-vec{
+
+	.inviditation-box .right-vec {
 		display: none;
 	}
 }
 
-@keyframes fadeIn {
+/* css heart falling  */
+.heartflake {
+	color: #fff;
+	font-size: 1em;
+	font-family: Arial;
+	text-shadow: 0 0 1px #000;
+}
+
+@-webkit-keyframes heartflakes-fall {
 	0% {
-		opacity: 0.6;
+		top: -10%
 	}
 
 	100% {
-		opacity: 1;
+		top: 100%
 	}
 }
 
-.fadeIn {
-	animation: fadeIn 1s;
+@-webkit-keyframes heartflakes-shake {
+	0% {
+		-webkit-transform: translateX(0px);
+		transform: translateX(0px)
+	}
+
+	50% {
+		-webkit-transform: translateX(80px);
+		transform: translateX(80px)
+	}
+
+	100% {
+		-webkit-transform: translateX(0px);
+		transform: translateX(0px)
+	}
+}
+
+@keyframes heartflakes-fall {
+	0% {
+		top: -10%
+	}
+
+	100% {
+		top: 100%
+	}
+}
+
+@keyframes heartflakes-shake {
+	0% {
+		transform: translateX(0px)
+	}
+
+	50% {
+		transform: translateX(80px)
+	}
+
+	100% {
+		transform: translateX(0px)
+	}
+}
+
+.heartflake img{
+	width: 24px;
+	height: 24px;
+}
+.heartflake {
+	position: fixed;
+	top: -10%;
+	z-index: 9999;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	cursor: default;
+	-webkit-animation-name: heartflakes-fall, heartflakes-shake;
+	-webkit-animation-duration: 10s, 3s;
+	-webkit-animation-timing-function: linear, ease-in-out;
+	-webkit-animation-iteration-count: infinite, infinite;
+	-webkit-animation-play-state: running, running;
+	animation-name: heartflakes-fall, heartflakes-shake;
+	animation-duration: 10s, 3s;
+	animation-timing-function: linear, ease-in-out;
+	animation-iteration-count: infinite, infinite;
+	animation-play-state: running, running
+}
+
+.heartflake:nth-of-type(0) {
+	left: 1%;
+	-webkit-animation-delay: 0s, 0s;
+	animation-delay: 0s, 0s
+}
+
+.heartflake:nth-of-type(1) {
+	left: 10%;
+	-webkit-animation-delay: 1s, 1s;
+	animation-delay: 1s, 1s
+}
+
+.heartflake:nth-of-type(2) {
+	left: 20%;
+	-webkit-animation-delay: 6s, .5s;
+	animation-delay: 6s, .5s
+}
+
+.heartflake:nth-of-type(3) {
+	left: 30%;
+	-webkit-animation-delay: 4s, 2s;
+	animation-delay: 4s, 2s
+}
+
+.heartflake:nth-of-type(4) {
+	left: 40%;
+	-webkit-animation-delay: 2s, 2s;
+	animation-delay: 2s, 2s
+}
+
+.heartflake:nth-of-type(5) {
+	left: 50%;
+	-webkit-animation-delay: 8s, 3s;
+	animation-delay: 8s, 3s
+}
+
+.heartflake:nth-of-type(6) {
+	left: 60%;
+	-webkit-animation-delay: 6s, 2s;
+	animation-delay: 6s, 2s
+}
+
+.heartflake:nth-of-type(7) {
+	left: 70%;
+	-webkit-animation-delay: 2.5s, 1s;
+	animation-delay: 2.5s, 1s
+}
+
+.heartflake:nth-of-type(8) {
+	left: 80%;
+	-webkit-animation-delay: 1s, 0s;
+	animation-delay: 1s, 0s
+}
+
+.heartflake:nth-of-type(9) {
+	left: 90%;
+	-webkit-animation-delay: 3s, 1.5s;
+	animation-delay: 3s, 1.5s
 }
